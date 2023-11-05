@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register_style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="wrapper_registration">
+            <div class="header">
+                <span class="company_name">Clarity Corp.</span>
+                <img class="user_icon" src="data:image/png;base64,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" alt="">
+            </div>
+
+            <div class="main_registration">
+                <div class="reg_text">Registration</div>
+                <input type="text" class="name_input" ref="name_input" placeholder="Username..." @keyup="checkLetter" v-model="name">
+                <input type="text" class="department_name" placeholder="Department..." @keyup="checkLetter" v-model="department">
+                <input type="text" class="role" placeholder="Role..." @keyup="checkLetter" v-model="role">
+                <input type="text" class="mail" placeholder="Mail..." @keyup="checkLetter" v-model="mail">
+                <input type="text" class="password" placeholder="Password..." @keyup="checkLetter" v-model="password">
+                <input type="text" class="confirm_password" placeholder="Confirm Password..." @keyup="checkLetter" v-model="password_confirm">
+                <span class="exists">Already have an account?</span><span class="login">Log in</span>
+                <!-- <button class="reg_btn" refs="reg_btn" @click="regBtn">Register</button> -->
+            </div>
+
+            <div class="fail_msg">
+                <span class="name_fail" ref="name_fail" v-if="this.name.length <= this.name_letter">
+                    {{name_fail}}
+                </span>
+                <img  ref="correct_name_answer" class="correct_name_answer" v-else-if="this.name.length > this.name_letter" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+                </img>
+            <!-- department -->
+            <span ref="department_fail" class="department_fail" v-if="this.department.length <= this.department_letter">
+                {{department_fail}}
+            </span>
+                <img  ref="correct_department_answer" class="correct_department_answer" v-else-if="this.department.length > this.department_letter" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+                </img>
+            <!-- role -->
+            <span  ref="role_fail" class="role_fail" v-if="this.role.length <= this.role_letter">
+                {{role_fail}}
+            </span>
+            <img  ref="correct_role_answer" class="correct_role_answer" v-else-if="this.role.length > this.role_letter" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+            </img>
+        <!-- mail -->
+        <span ref="mail_fail" class="mail_fail" v-if="this.mail.length < this.mail_letter || this.mail.length > this.mail_letter || !this.username.includes(this.mail)">
+            {{mail_fail}}
+        </span>
+         <img  ref="correct_mail_answer" class="correct_mail_answer" v-else-if="this.mail.includes('clarity.corp') && this.mail.length == this.mail_letter" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+        </img>
+        <!-- password -->
+         <span ref="password_fail" class="password_fail" v-if="this.password.length <= this.password_letter">
+        {{password_fail}}
+        </span>
+        <img  ref="correct_password_answer" class="correct_password_answer" v-else-if="this.password.length > this.password_letter" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+        </img>
+        <!-- confirm -->
+        <span ref="confirm_fail" class="confirm_fail">
+            {{password_confirm_fail}}
+            </span>
+            <img  ref="correct_confirm_answer" class="correct_confirm_answer" src="C:\Users\Батыр\Desktop\Web Tech Aitu\registration\icon\free-icon-check-mark-4225683.png">
+        </img>
+            </div> 
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="register_script.js"></script>
+</body>
+</html>
+
+ 
